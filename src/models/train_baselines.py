@@ -9,7 +9,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from src.features.make_features import build_features, train_val_split
 
 df = pd.read_csv("data/processed/cleaned_dubai_properties.csv")
-x,y = build_features(df,encoding="onehot")
+x,y = build_features(df,encoding="label")
 x_train, x_val, y_train, y_val = train_val_split(x,y)
 
 def log_wrap(model):
