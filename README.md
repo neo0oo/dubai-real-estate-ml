@@ -1,11 +1,11 @@
-🏙️ Dubai Real Estate ML Project
+# 🏙️ Dubai Real Estate ML Project
 
 Predicting rental prices in Dubai’s housing market using machine learning.
 This project explores property data from Kaggle, applying data cleaning, feature engineering, and regression modeling (Linear, Random Forest, and HistGradientBoosting) to understand and forecast property rents.
 
 Built with Python, Pandas, Scikit-learn, and Jupyter Notebook, the workflow follows a modular structure for clarity, scalability, and reproducibility.
 
-🧠 Key Highlights
+## 🧠 Key Highlights
 
 🧹 Cleaned and prepared real-world property data
 
@@ -17,7 +17,7 @@ Built with Python, Pandas, Scikit-learn, and Jupyter Notebook, the workflow foll
 
 💾 Saved trained models, metrics, and results for reproducible analysis
 
-📂 Project Structure
+## 📂 Project Structure
 ```
 dubai-real-estate-ml/
 │
