@@ -1,0 +1,10 @@
+{
+    "date": "2025-10-16 14:17:53",
+    "models": {
+        "LinearRegression": {
+            "r2_score": 0.5,
+            "cv_r2_mean": 0.485,
+            "cv_r2_std": 0.025
+        }
+    }
+}
