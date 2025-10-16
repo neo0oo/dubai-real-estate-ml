@@ -17,7 +17,8 @@ Built with Python, Pandas, Scikit-learn, and Jupyter Notebook, the workflow foll
 
 💾 Saved trained models, metrics, and results for reproducible analysis
 
-```📂 Project Structure
+📂 Project Structure
+```
 dubai-real-estate-ml/
 │
 ├── data/
