@@ -12,6 +12,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 from src.features.make_features import build_features, train_val_split
 from sklearn.feature_selection import SelectKBest, f_regression
 from sklearn.model_selection import cross_val_score
+from .save_results import save_model_results
 
 def add_engineered_features(df):
     # Basic ratios
@@ -126,3 +127,12 @@ for name, base_model in models.items():
     rmse = np.sqrt(mean_squared_error(y_val, preds))
     r2 = r2_score(y_val, preds)
     print(f"{name} -> MAE: {mae:,.0f} AED, RMSE: {rmse:,.0f} AED, R²: {r2:.3f}")
+    
+    
+    result_file = save_model_results(
+        model_name=name,
+        r2_score=r2,
+        cv_r2_mean=r2_mean,
+        cv_r2_std=r2_std
+    )
+    print(f"Results saved to: {result_file}")
