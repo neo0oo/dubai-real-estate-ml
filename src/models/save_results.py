@@ -31,11 +31,3 @@ def save_model_results(model_name, r2_score, cv_r2_mean=None, cv_r2_std=None):
     
     return filename
 
-# Example usage:
-result_file = save_model_results(
-    model_name="LinearRegression",
-    r2_score=0.5,
-    cv_r2_mean=0.485,
-    cv_r2_std=0.025
-)
-print(f"Results saved to: {result_file}")
